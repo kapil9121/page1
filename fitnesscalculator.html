@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <title>Fitness Calculator</title>
+    <link rel="stylesheet" href="gym1.css">
+</head>
+
+<body>
+    <style>
+        body,
+        html {
+            height: 100%;
+            background-image: url('https://wallpapers.com/images/hd/black-texture-wooden-surface-f73lgop4iivovs7s.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        .a {
+            padding-bottom: 32px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: none;
+            color: white;
+
+
+        }
+
+        .a a {
+            text-decoration: none;
+            color: white;
+            border: 6px solid rgb(7, 7, 7);
+            border-radius: 20px;
+            margin: 2px;
+            padding: 13px;
+        }
+
+        .a :hover {
+            background-color: rgb(79, 79, 77);
+
+            box-shadow: 4px 4px 4px red;
+
+        }
+
+        .alert {
+            color: white;
+            border: 6px solid rgb(204, 206, 199);
+            border-radius: 34px;
+        }
+
+        .z {
+            padding: 12px;
+            margin: 25px;
+            position: relative;
+            bottom: 10px;
+
+        }
+
+        button.submit {
+            background-color: rgb(49, 50, 50);
+            box-shadow: 7px 8px 8px black;
+            position: relative;
+            left: 190px;
+
+        }
+
+        .m {
+            width: 119px;
+            height: auto;
+
+        }
+
+        #bim{
+          box-shadow: 4px 4px 90px white;
+          
+        }
+        .bmim{
+            color:#cbb1a6;;
+        }
+       
+    </style>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img
+                    src="https://img.freepik.com/premium-vector/fitness-vector-logo-design-template-black-background_498048-1042.jpg?w=740"
+                    alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="gym1.html">Home</a>
+                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="#">Fitness Calculator</a>
+                    <a class="nav-link" href="workout.html">Workouts</a>
+
+                </div>
+            </div>
+    </nav>
+    <div class="container">
+        <div class="row mt-5 row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+            <div class="col container1">
+
+                <div class="a"><a href="#" id="hi">BMI Calculator</a></div>
+                <div class="a"><a href="#">Calorie Calculator</a></div>
+                <div class="a"><a href="#">Body Fat Calculator</a></div>
+                <div class="a"><a href="#">BMR Calculator</a></div>
+                <div class="a"><a href="#">Ideal Weight Calculator</a></div>
+            </div>
+
+
+            <div class="col alert  containere" role="alert" id="alert-div" style="display:none;">
+                <div class="z">
+                    <label for="age">Age : </label>
+                    <input class="m" type="text" name="age" id="age">
+                </div>
+                <div class="z">
+                    <label for="genderr">Gender : </label>
+                    Male <input type="radio" name="gender" id="gendeoo"> Female <input type="radio" name="gender"
+                        id="gendeo">
+                </div>
+                <div class="z hight">
+                    <label for="height">Height : </label>
+                    <input class="m" type="number" name="height" id="height1" class="row-auto" placeholder="Feets">
+                    <input class="m" type="number" name="height" id="height2" class="row-auto" placeholder="inches">
+                </div>
+                <div class="z">
+                    <label for="weight">Weight : </label>
+                    <input class="m" type="number" name="Weight" id="iWeight" placeholder="Pounds">
+                </div>
+                <div class="z"><button class="submit">Submit</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="container alert" role="alert" id="desc" style="display: none;">
+        <div class="row">
+            <div class="col-8">
+                <h2 class="text-center font-weight-bold">BMI introduction</h2>
+
+                <p class="font-italic bmim">BMI is a measurement of a person's leanness or corpulence based on their height
+                    and weight, and is intended to quantify tissue mass. It is widely used as a general indicator of
+                    whether a person has a healthy body weight for their height. Specifically, the value obtained from
+                    the calculation of BMI is used to categorize whether a person is underweight, normal weight,
+                    overweight, or obese depending on what range the value falls between. These ranges of BMI vary based
+                    on factors such as region and age, and are sometimes further divided into subcategories such as
+                    severely underweight or very severely obese. Being overweight or underweight can have significant
+                    health effects, so while BMI is an imperfect measure of healthy body weight, it is a useful
+                    indicator of whether any additional testing or action is required. Refer to the table below to see
+                    the different categories based on BMI that are used by the calculator.</p>
+            </div>
+            <div class="col-4">
+                <div class="iam" id="bim">
+                    <img id="bimg" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWQFHEipRipPE3OiDzsxQYoLPq2sPS4Bj803cEB_3vZt65JhuT" class="img-fluid" alt="">
+                </div>
+                <div class="border border-danger res">
+                    <p class="pt-5 text-primary">This place is for result</p>
+                </div>
+                <div>
+                   <ul>
+                    <li>Healthy BMI range: 18.5 kg/m2 - 25 kg/m2</li>
+                    <li>Healthy weight for the height: 59.9 kg - 81 kg</li>
+                    <li>BMI Prime: 0.8</li>
+                    <li>Ponderal Index: 11.1 kg/m3</li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>
